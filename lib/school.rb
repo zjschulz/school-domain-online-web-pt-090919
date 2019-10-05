@@ -7,11 +7,7 @@ class School
   end
   
   def add_student(name,grade)
-        @roster[grade] = []
-        @roster.each do |g, hash|
-        hash << name
-        hash.sort
-        end
+    self.roster[grade] << name
   end
 
   def grade(grade)
